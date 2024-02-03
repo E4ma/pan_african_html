@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan-African Group Association</title>
+    <!-- Material-UI Stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/system/css/system.css" integrity="sha384-oQ1L8a2n1r6N6p9s04zYlXUuYXE7eKjyj3ljd3dc1Z5Sbvpq6iscaL+JgJo2RNqf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/system/css/system.css" integrity="sha384-oQ1L8a2n1r6N6p9s04zYlXUuYXE7eKjyj3ljd3dc1Z5Sbvpq6iscaL+JgJo2RNqf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material/css/material.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/@mui/material@latest/dist/material.umd.min.js" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59DWEF5cfFpL/GO9tLBD8i9I" crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #f8f8f8;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .image-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+            animation: slide 10s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .highlight-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .highlight-card {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .highlight-card:hover {
+            transform: scale(1.05);
+        }
+
+        .membership-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .login-btn {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .login-btn:hover {
+            background-color: #2c3e50;
+        }
+
+        .vision-mission-values {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Pan-African Group Yukon</h1>
+        </div>
+        <div>
+            <img class="logo" src="./assets/logo1.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- <div class="image-slider"> -->
+        <div>
+            <!-- Add images of people of African and Caribbean descent -->
+            <img src="./assets/image1.jpg" alt="People of African descent">
+            <!-- <img src="./assets/jamaican.jpg" alt="People of Caribbean descent"> -->
+            <!-- Add more images as needed -->
+        </div>
+
+        <div class="highlight-section">
+            <div class="highlight-card">
+                <h2>Black History Month</h2>
+                <p>Celebrating the rich history and contributions of the black community.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h2>Upcoming Events</h2>
+                <p>Join us for exciting events that celebrate African and Caribbean culture!</p>
+            </div>
+
+            <div class="highlight-card">
+                <h2>Join Us</h2>
+                <p>Become a member of our vibrant community. Embrace diversity and culture.</p>
+            </div>
+        </div>
+
+        <div class="membership-login">
+            <button class="login-btn">Member Login</button>
+        </div>
+
+        <div class="vision-mission-values">
+            <h2>Vision, Mission, and Values</h2>
+            <!-- Add the Vision, Mission, and Values of the association here -->
+            <p><strong>Vision:</strong> To foster a strong sense of community and promote the rich cultural heritage of Africa and the Caribbean.</p>
+            <p><strong>Mission:</strong> Bringing people together through events, activities, and education to celebrate diversity and unity.</p>
+            <p><strong>Values:</strong> Inclusivity, Respect, Collaboration, Empowerment, Celebration.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pan-African Group Yukon</p>
+    </footer>
+</body>
+</html>
